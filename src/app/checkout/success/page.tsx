@@ -2,7 +2,6 @@ import { SuccessPageGradients } from '@/components/gradients/success-page-gradie
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { PoweredByPaddle } from '@/components/home/footer/powered-by-paddle';
 import '../../../styles/checkout.css';
 import { createClient } from '@/utils/supabase/server';
 
@@ -31,9 +30,6 @@ export default async function SuccessPage() {
               {data.user ? <Link href={'/dashboard'}>Go to Dashboard</Link> : <Link href={'/'}>Go to Home</Link>}
             </Button>
           </div>
-        </div>
-        <div className={'absolute bottom-0 w-full'}>
-          <PoweredByPaddle />
         </div>
       </div>
     </main>
