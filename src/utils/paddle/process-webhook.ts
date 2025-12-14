@@ -101,11 +101,11 @@ export class ProcessWebhook {
         customer_id: transaction.customerId,
         subscription_id: transaction.subscriptionId ?? null,
         status: transaction.status,
-        amount: transaction.totals?.total ?? null,
+        // amount: transaction.totals?.total ?? null,
         currency_code: transaction.currencyCode ?? null,
         billing_period: transaction.billingPeriod ? JSON.stringify(transaction.billingPeriod) : null,
-        price_id: transaction.items?.[0]?.priceId ?? null,
-        product_id: transaction.items?.[0]?.productId ?? null,
+        // price_id: transaction.items?.[0]?.priceId ?? null,
+        // product_id: transaction.items?.[0]?.productId ?? null,
       })
       .select();
 
