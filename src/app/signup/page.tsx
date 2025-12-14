@@ -1,7 +1,6 @@
 import { LoginGradient } from '@/components/gradients/login-gradient';
 import '../../styles/login.css';
 import { LoginCardGradient } from '@/components/gradients/login-card-gradient';
-import { GhLoginButton } from '@/components/authentication/gh-login-button';
 import { SignupForm } from '@/components/authentication/sign-up-form';
 
 export default function SignupPage() {
@@ -17,7 +16,6 @@ export default function SignupPage() {
           <LoginCardGradient />
           <SignupForm />
         </div>
-        <GhLoginButton label={'Sign up with GitHub'} />
         <div
           className={
             'mx-auto w-[343px] md:w-[488px] bg-background/80 backdrop-blur-[6px] px-6 md:px-16 pt-0 py-8 gap-6 flex flex-col items-center justify-center rounded-b-lg'
